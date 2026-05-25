@@ -16,7 +16,7 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 
 | Category | Skills |
 |---|---|
-| **Languages** | C, C++, Assembly (ARM/MIPS), Python, Java, Bash etc. |
+| **Languages** | C, C++, Rust, Assembly (ARM/MIPS), Python, Java, Bash, JavaScript |
 | **Embedded & Firmware** | Firmware development, hardware driver development (Linux, Windows CE) |
 | **Linux Kernel & Systems** | Kernel module development, eCryptfs, fanotify, Linux Namespaces, VFS, address_space |
 | **Toolchains** | ARM/MIPS cross-compilation, GCC, GNU Debugger, Makefile, CMake, AutoTools |
@@ -62,7 +62,7 @@ BicDroid develops enterprise-grade data security products, including transparent
 ### Cloud Engineer
 **Kama.AI** | Mississauga, Ontario, Canada | Dec 2023 – Sep 2024
 
-Kama.AI develops AI-powered conversational assistant products for enterprise clients. This role was Frank's first professional engagement in Canada after immigrating, and in a domain — cloud infrastructure — entirely new to him.
+Kama.AI develops AI-powered conversational assistant products for enterprise clients.
 
 - Investigated and fully resolved a **production security breach**: identified root cause, contained the incident, and delivered a complete incident report to the client
 - Achieved **AWS Certified Security – Specialty** certification through hands-on work with production AWS infrastructure
