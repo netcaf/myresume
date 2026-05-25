@@ -33,15 +33,11 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 ### Software Development Engineer in Test (SDET)
 **BicDroid Inc.** | Waterloo, Ontario, Canada | Oct 2024 – Present
 
-BicDroid develops enterprise-grade data security products: a Windows TDE (Transparent Data Encryption) driver, an identity authentication platform, and Linux encryption systems. Engineering projects are directed by a professor of systems security who leads the company.
+BicDroid develops enterprise-grade data security products, including transparent encryption drivers for Windows and Linux, and an identity authentication platform. Engineering projects are directed by a professor of systems security who leads the company.
 
 **Linux Kernel Development**
 
-- Extended the open-source **eCryptfs Linux kernel module** with a custom, self-contained ACL subsystem (C, co-developed with AI tooling):
-  - Three-dimensional access model: **Subject** (user / group / process) × **Permission** (r / w / x) × **Content Mode** (plaintext / ciphertext / deny)
-  - Dual `address_space` cache isolation enforcing strict separation between plaintext and ciphertext page caches; `content=ciphertext` enforced as kernel-level read-only regardless of rule configuration
-  - Rule persistence via xattr (`trusted.ecryptfs_acl_id`), directory inheritance via upward tree traversal to the eCryptfs mount point
-  - Namespace-independent access decisions — container-friendly; no dependency on external LSM frameworks (SELinux / AppArmor)
+- Extended the open-source **eCryptfs Linux kernel module** with a custom, self-contained ACL subsystem (C, co-developed with AI tooling): controls who (user / group / process) can access which encrypted files and in what form (plaintext or ciphertext), enforced at the kernel level with persistent rules, directory inheritance, and no dependency on external LSM frameworks (SELinux / AppArmor)
 
 - Built a **file access monitoring tool** using the Linux **fanotify** API (C, independent research): monitors file access events on specified directories and tracks file move operations across designated mount points
 
@@ -49,13 +45,13 @@ BicDroid develops enterprise-grade data security products: a Windows TDE (Transp
 
 - Conceived a **Linux Namespace-based encryption architecture** to simultaneously expose plaintext and ciphertext views of encrypted data without modifying client applications (Rust, Linux; architecture proposed independently, implemented with AI tooling) — addressing the requirement for dual-access capability in banking client deployments
 
-- Designed an **iSCSI + TDE remote storage architecture** delivering TDE-protected block storage over iSCSI, enabling encrypted remote file storage for client environments (independent initiative) — adopted as the baseline storage architecture for banking client deployments
+- Designed an **iSCSI-based remote encrypted storage architecture** delivering transparently encrypted block storage over iSCSI, enabling secure remote file storage for client environments (independent initiative) — adopted as the baseline storage architecture for banking client deployments
 
 **Automation & Monitoring**
 
 - Built **AccessTracker**: automated file and process access monitor for Windows, leveraging ProcMon as the capture engine
 - Implemented **Jenkins CI/CD pipelines** on Linux for product build and test automation
-- Built a **pytest automation framework** from scratch for Windows TDE driver NAS share protection validation:
+- Built a **pytest automation framework** from scratch for Windows encryption driver NAS share protection validation:
   - Covers 6 Windows Server versions (2008R2 → Server 2022) × 3 SMB protocol versions = 18+ test matrix combinations; designed to scale without structural changes
 - Designed a **protocol simulation client** for the identity authentication platform:
   - Simulates all client types (Android, Windows, Linux); launches concurrent multi-user authentication flows
@@ -64,7 +60,7 @@ BicDroid develops enterprise-grade data security products: a Windows TDE (Transp
 ---
 
 ### Cloud Engineer
-**Kama.AIa** | Mississauga, Ontario, Canada | Dec 2023 – Sep 2024
+**Kama.AI** | Mississauga, Ontario, Canada | Dec 2023 – Sep 2024
 
 Kama.AI develops AI-powered conversational assistant products for enterprise clients. This role was Frank's first professional engagement in Canada after immigrating, and in a domain — cloud infrastructure — entirely new to him.
 
