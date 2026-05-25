@@ -64,8 +64,7 @@ BicDroid develops enterprise-grade data security products, including transparent
 
 Kama.AI develops AI-powered conversational assistant products for enterprise clients.
 
-- Investigated and fully resolved a **production security breach**: identified root cause, contained the incident, and delivered a complete incident report to the client
-- Achieved **AWS Certified Security – Specialty** certification through hands-on work with production AWS infrastructure
+- Investigated and fully resolved a **production security breach**: identified root cause, contained the incident, and delivered a complete incident report to the client; achieved **AWS Certified Security – Specialty** certification through this engagement
 - Designed and implemented the company's CI/CD release pipeline; integrated real-time product monitoring with Datadog
 
 ---
