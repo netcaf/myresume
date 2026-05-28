@@ -6,7 +6,7 @@ Mississauga, Ontario, Canada | zzhikang@gmail.com | +1 647 923 9089
 
 ## Professional Summary
 
-Senior systems software engineer with over a decade of hands-on experience in embedded firmware, hardware driver development, and low-level Linux systems programming. Core expertise built at VIA Technologies (Windows CE display drivers, hardware-accelerated MPEG decoding) and MediaTek/MStar Semiconductor (DTV SoC firmware, GStreamer multimedia framework, embedded Linux WebKit browser) — including a granted patent for a WebKit content-loading optimization.
+Senior systems software engineer with over 12 years of hands-on experience in embedded firmware, hardware driver development, and low-level Linux systems programming. Core expertise developed at MediaTek/MStar Semiconductor (DTV SoC firmware, GStreamer multimedia framework, embedded Linux WebKit browser) and VIA Technologies (Windows CE display drivers, hardware-accelerated MPEG decoding) — including a granted patent for WebKit content-loading optimization.
 
 Since immigrating to Canada, has continued to work at the systems level: extended a Linux kernel module with a custom ACL subsystem in C, designed a Linux Namespace-based encryption architecture implemented in Rust (adopted for all banking client deployments), and built a fanotify-based file monitoring tool through independent kernel API research. Holds an AWS Certified Security – Specialty certification. M.Sc. in Computational Mathematics, Fudan University.
 
@@ -33,29 +33,12 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 ### Software Development Engineer in Test (SDET)
 **BicDroid Inc.** | Waterloo, Ontario, Canada | Oct 2024 – Present
 
-BicDroid develops enterprise-grade data security products, including transparent encryption drivers for Windows and Linux, and an identity authentication platform. Engineering projects are directed by a professor of systems security who leads the company.
+Developed security and encryption products under direction of a systems security professor.
 
-**Linux Kernel Development**
-
-- Extended the open-source **eCryptfs Linux kernel module** with a custom, self-contained ACL subsystem (C, co-developed with AI tooling): controls who (user / group / process) can access which encrypted files and in what form (plaintext or ciphertext), enforced at the kernel level with persistent rules, directory inheritance, and no dependency on external LSM frameworks (SELinux / AppArmor)
-
-- Built a **file access monitoring tool** using the Linux **fanotify** API (C, independent research): monitors file access events on specified directories and tracks file move operations across designated mount points
-
-**Systems Architecture & Innovation**
-
-- Conceived a **Linux Namespace-based encryption architecture** to simultaneously expose plaintext and ciphertext views of encrypted data without modifying client applications (Rust, Linux; architecture proposed independently, implemented with AI tooling) — addressing the requirement for dual-access capability in banking client deployments
-
-- Designed an **iSCSI-based remote encrypted storage architecture** delivering transparently encrypted block storage over iSCSI, enabling secure remote file storage for client environments (independent initiative) — adopted as the baseline storage architecture for banking client deployments
-
-**Automation & Monitoring**
-
-- Built **AccessTracker**: automated file and process access monitor for Windows, leveraging ProcMon as the capture engine
-- Implemented **Jenkins CI/CD pipelines** on Linux for product build and test automation
-- Built a **pytest automation framework** from scratch for Windows encryption driver NAS share protection validation:
-  - Covers 6 Windows Server versions (2008R2 → Server 2022) × 3 SMB protocol versions = 18+ test matrix combinations; designed to scale without structural changes
-- Designed a **protocol simulation client** for the identity authentication platform:
-  - Simulates all client types (Android, Windows, Linux); launches concurrent multi-user authentication flows
-  - Enables both functional flow validation and full system stress testing; all production validation was performed using this tool
+- Extended the open-source **eCryptfs Linux kernel module** with a custom ACL subsystem in C: per-file access control enforced at kernel level with persistent rules, directory inheritance, and no LSM dependency
+- Conceived and implemented a **Linux Namespace-based encryption architecture** in Rust, enabling simultaneous plaintext/ciphertext access — adopted for all banking client deployments
+- Built a **pytest automation framework** for encryption driver validation covering 6 OS versions × 3 SMB protocol versions (18+ combinations)
+- Designed and implemented a **protocol simulation client** for the identity authentication platform — independently replicating the core authentication protocol across all client types (Android, Windows, Linux) with concurrent multi-user flows; became the core infrastructure for exercising the full authentication system under realistic load conditions
 
 ---
 
@@ -84,28 +67,30 @@ MStar Semiconductor was a global leader in DTV SoC design. Responsible for firmw
 - **OTA Firmware Upgrade (LGE HK51):** Designed and implemented Over-the-Air DTV firmware upgrade for the LG Electronics T2 HK51 project; provided on-site technical support through mass production
 - **WebKit Browser — Patent Holder:** Developed a WebKit-based browser for DTV on embedded Linux; invented a novel webpage content-loading optimization — granted patent: *"WebKit browser webpage content loading method and device"*
 - **GStreamer Multimedia Framework:** Developed and maintained GStreamer-based multimedia framework on DTV platforms, enabling broad media format support across video player applications
-- **Hardware Drivers:** Maintained the Mstar Scaler driver (video signal processing: scaling, NR, color space conversion), Graphics Engine (GE) driver (UI/OSD/Subtitle), and TSP (Transport Stream Processor) firmware
+- **Hardware Drivers:** Maintained Mstar Scaler driver (video signal processing: scaling, NR, color space conversion to LCD panel), Graphics Engine driver (UI/OSD/Subtitle rendering), and TSP (Transport Stream Processor) firmware; ported TSP to new chipset generations
 
 ---
 
 ### Advanced Embedded Software Engineer
 **VIA Technologies Inc.** | Shanghai, China | Sep 2005 – Aug 2008
 
-Responsible for embedded display driver development for Windows CE platforms.
+Developed embedded display drivers for Windows CE on VIA SoC platforms, covering the full stack from AGP hardware to DirectDraw/DirectShow multimedia pipeline.
 
-- **H/W Acceleration Interface:** Designed and implemented a hardware acceleration interface for the video decoder subsystem, decoupling H/W overlay management from MPEG decoding routines; reused across multiple chipset projects
+- **H/W Acceleration Interface:** Designed and implemented a hardware acceleration interface for the video decoder subsystem, decoupling H/W overlay management from MPEG decoding routines and enabling modular reuse across chipsets
 - **Driver Migration CE 5.0 → CE 6.0:** Led complete migration of the display driver, covering DirectDraw implementation, hardware MPEG decoding, and Video Port support
 - **Multi-Chipset Porting:** Ported display drivers to multiple new chipsets; implemented MPEG-2/4 decoder validation at motion compensation level
-- **AGP Driver Optimization:** Maintained and optimized AGP driver including hardware-accelerated MPEG-2/4 decoding routines and AGP GART/command manager redesign
+- **AGP Driver Optimization:** Maintained and optimized AGP driver including hardware-accelerated MPEG-2/4 decoding routines and AGP GART/command manager redesign; resolved overlay rendering bugs in the new driver version
 
 ---
 
 ### Smartcard Software Engineer
 **Shanghai COS Software Co., Ltd.** | Shanghai, China | Jul 2002 – May 2005
 
-- Designed and implemented COS low-level driver per **ISO 7816 Protocol (T=0)**
-- Developed and certified multiple Smartcard product lines: Social Security Card, GlobalPlatform Java Card, CMCC SIM Card, China Mobile Wuyou Assistant, STK Downloading
-- Built a Python `unittest`-based automated validation framework for Smartcard OS development
+Developed bare-metal firmware for smartcard Chip Operating Systems (COS) on 8051-class microcontrollers in Assembly and C, targeting severely resource-constrained environments (KB-range RAM/ROM).
+
+- **ISO 7816 Communication Driver:** Implemented smartcard communication protocol driver in Assembly on 8051 architecture, handling APDU command dispatch and low-level UART framing
+- **Multi-Product Firmware:** Developed and formally certified COS firmware for five smartcard product lines — Social Security Card, GlobalPlatform Java Card, CMCC SIM, China Mobile Wuyou Assistant, and STK Downloading
+- **Automated Validation Framework:** Built Python `unittest`-based test framework for COS firmware validation, automating APDU command sequence testing
 
 ---
 
