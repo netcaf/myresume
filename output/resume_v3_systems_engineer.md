@@ -23,7 +23,7 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 | **Multimedia** | MPEG-2, MPEG-4, H.264/AVC, GStreamer, WebKit, DirectDraw |
 | **Protocols & Standards** | ISO 7816 (smartcard), GSM, EMV, SMB, iSCSI, MPEG-TS |
 | **Testing & Automation** | pytest, unittest, Jenkins, protocol simulation, stress testing |
-| **Cloud** | AWS (Security Specialty, CodePipeline, CodeDeploy), Datadog |
+| **Infrastructure & DevOps** | AWS (Security Specialty, CodePipeline, CodeDeploy), Datadog |
 | **OS** | Linux, Windows CE/Embedded/Server |
 
 ---
@@ -42,7 +42,7 @@ Developed security and encryption products under direction of a systems security
 
 ---
 
-### Cloud Engineer
+### Software Engineer Intern
 **Kama.AI** | Mississauga, Ontario, Canada | Dec 2023 – Sep 2024
 
 - Investigated and fully resolved a **production security breach**: identified root cause, contained the incident, and delivered a complete incident report to the client; achieved **AWS Certified Security – Specialty** certification through this engagement
