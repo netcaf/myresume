@@ -45,8 +45,6 @@ Developed security and encryption products under direction of a systems security
 ### Cloud Engineer
 **Kama.AI** | Mississauga, Ontario, Canada | Dec 2023 – Sep 2024
 
-Kama.AI develops AI-powered conversational assistant products for enterprise clients.
-
 - Investigated and fully resolved a **production security breach**: identified root cause, contained the incident, and delivered a complete incident report to the client; achieved **AWS Certified Security – Specialty** certification through this engagement
 - Designed and implemented the company's CI/CD release pipeline; integrated real-time product monitoring with Datadog
 
@@ -90,7 +88,6 @@ Developed bare-metal firmware for smartcard Chip Operating Systems (COS) on 8051
 
 - **ISO 7816 Communication Driver:** Implemented smartcard communication protocol driver in Assembly on 8051 architecture, handling APDU command dispatch and low-level UART framing
 - **Multi-Product Firmware:** Developed and formally certified COS firmware for five smartcard product lines — Social Security Card, GlobalPlatform Java Card, CMCC SIM, China Mobile Wuyou Assistant, and STK Downloading
-- **Automated Validation Framework:** Built Python `unittest`-based test framework for COS firmware validation, automating APDU command sequence testing
 
 ---
 
