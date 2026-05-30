@@ -16,7 +16,7 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 
 | Category | Skills |
 |---|---|
-| **Languages** | C, C++, Assembly, Python, Java, Bash, JavaScript, Rust |
+| **Languages** | C, C++, Assembly, Python, Bash, JavaScript, Rust |
 | **Embedded & Firmware** | Firmware development, hardware driver development (Linux, Windows CE) |
 | **Linux Kernel & Systems** | Kernel module development, eCryptfs, Linux Namespaces, VFS |
 | **Toolchains** | ARM/MIPS cross-compilation, GCC, GNU Debugger, Makefile, CMake, AutoTools |
