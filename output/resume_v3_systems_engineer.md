@@ -16,13 +16,13 @@ Since immigrating to Canada, has continued to work at the systems level: extende
 
 | Category | Skills |
 |---|---|
-| **Languages** | C, C++, Rust, Assembly (ARM/MIPS), Python, Java, Bash, JavaScript |
+| **Languages** | C, C++, Assembly, Python, Java, Bash, JavaScript, Rust |
 | **Embedded & Firmware** | Firmware development, hardware driver development (Linux, Windows CE) |
-| **Linux Kernel & Systems** | Kernel module development, eCryptfs, fanotify, Linux Namespaces, VFS, address_space |
+| **Linux Kernel & Systems** | Kernel module development, eCryptfs, Linux Namespaces, VFS |
 | **Toolchains** | ARM/MIPS cross-compilation, GCC, GNU Debugger, Makefile, CMake, AutoTools |
-| **Multimedia** | MPEG-2, MPEG-4, H.264/AVC, GStreamer, WebKit, DirectDraw |
-| **Protocols & Standards** | ISO 7816 (smartcard), GSM, EMV, SMB, iSCSI, MPEG-TS |
-| **Testing & Automation** | pytest, unittest, Jenkins, protocol simulation, stress testing |
+| **Multimedia** | GStreamer, DirectShow, MPEG-2, MPEG-4, H.264/AVC|
+| **Protocols & Standards** | EMV, ISO 7816 (smartcard), SMB, MPEG-TS |
+| **Testing & Automation** | pytest, unittest, Jenkins, protocol simulation |
 | **Infrastructure & DevOps** | AWS (Security Specialty, CodePipeline, CodeDeploy), Datadog |
 | **OS** | Linux, Windows CE/Embedded/Server |
 
