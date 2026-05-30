@@ -8,7 +8,7 @@ Mississauga, Ontario, Canada | zzhikang@gmail.com | +1 647 923 9089
 
 Senior systems software engineer with deep expertise in embedded firmware, hardware driver development, and low-level Linux systems programming. Core expertise developed at MediaTek/MStar Semiconductor (DTV SoC firmware, GStreamer multimedia framework, embedded Linux WebKit browser) and VIA Technologies (Windows CE display drivers, hardware-accelerated MPEG decoding) — including a granted patent for WebKit content-loading optimization.
 
-Since immigrating to Canada, has continued to work at the systems level: extended the open-source eCryptfs Linux kernel module with a custom ACL subsystem in C, conceived a Linux Namespace-based encryption architecture (adopted for all banking client deployments), and independently designed a protocol simulation client replicating the full identity authentication protocol across Windows, and Linux client types. Holds an AWS Certified Security – Specialty certification. M.Sc. in Computational Mathematics, Fudan University.
+Since immigrating to Canada, has continued to work at the systems level: extended the open-source eCryptfs Linux kernel module with a custom ACL subsystem in C, conceived a Linux Namespace-based encryption architecture (adopted for all banking client deployments), and independently designed a protocol simulation client replicating the full identity authentication protocol across Windows and Linux client types. Holds an AWS Certified Security – Specialty certification. M.Sc. in Computational Mathematics, Fudan University.
 
 ---
 
