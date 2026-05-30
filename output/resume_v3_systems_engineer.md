@@ -87,7 +87,7 @@ Developed embedded display drivers for Windows CE on VIA SoC platforms, covering
 Developed bare-metal firmware for smartcard Chip Operating Systems (COS) on 8051-class microcontrollers in Assembly and C, targeting severely resource-constrained environments (KB-range RAM/ROM).
 
 - **Multi-Product Firmware:** Developed and formally certified COS firmware for five smartcard product lines — Social Security Card, GlobalPlatform Java Card, CMCC SIM, China Mobile Wuyou Assistant, and STK Downloading
-- **ISO 7816 Communication Driver:** Implemented smartcard communication protocol driver in Assembly on 8051 architecture, handling APDU command dispatch and low-level UART framing
+- **ISO 7816 Communication Driver:** Implemented smartcard communication protocol driver in Assembly on 8051 architecture, handling APDU command dispatch
 
 ---
 
