@@ -63,9 +63,9 @@ Served as primary caregiver for my first child from birth. Concurrently planned 
 MStar Semiconductor was a global leader in DTV SoC design. Responsible for firmware, middleware, and driver development across multiple chipset generations.
 
 - **OTA Firmware Upgrade (LGE HK51):** Contributed to the Over-the-Air DTV firmware upgrade for the LG Electronics T2 HK51 project — completed outstanding implementation tasks, resolved customer-reported defects, and traveled on-site to the manufacturing facility to support mass production launch.
+- **Hardware Drivers:** Maintained Mstar Scaler driver (video signal processing: scaling, NR, color space conversion to LCD panel), Graphics Engine driver (UI/OSD/Subtitle rendering), and TSP (Transport Stream Processor) firmware; ported TSP to new chipset generations
 - **WebKit Browser — Patent Holder:** Developed a WebKit-based browser for DTV on embedded Linux; invented a novel webpage content-loading optimization — granted patent: *"WebKit browser webpage content loading method and device"*
 - **GStreamer Multimedia Framework:** Developed and maintained GStreamer-based multimedia framework on DTV platforms, enabling broad media format support across video player applications
-- **Hardware Drivers:** Maintained Mstar Scaler driver (video signal processing: scaling, NR, color space conversion to LCD panel), Graphics Engine driver (UI/OSD/Subtitle rendering), and TSP (Transport Stream Processor) firmware; ported TSP to new chipset generations
 
 ---
 
